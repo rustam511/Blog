@@ -1,0 +1,27 @@
+<h1>{{ title }}</h1>
+<p>{{ text }}</p>
+<p>Все посты (свалка) : {{ posts }}</p>
+<p>Пост №0 : {{ posts.0 }}</p>
+<p>Пост №1 : {{ posts.1 }}</p>
+>
+
+<h1>{{ posts.0.title }}</h1>
+<p>{{ posts.0.text }}</p>
+
+<h1>{{ posts.1.title }}</h1>
+<p>{{ posts.1.text }}</p>
+
+
+{% for p in posts %}
+    <h1>{{ p.title }}</h1>
+    <p>{{ p.text }}</p>
+{% endfor %}
+
+<ol>
+{% for p in posts %}
+
+    <li>{{ p.title }}</li>
+    <li>{{ p.text}}</li>
+   
+{% endfor %}
+</ol>
