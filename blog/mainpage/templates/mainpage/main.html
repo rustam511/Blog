@@ -1,5 +1,7 @@
+{% extends 'mainpage/main2.html' %}
+{% block menu %}
+ {% include 'mainpage/menu.html' %}
+{% endblock %}
+{% block content %}
 <h1>Я молодец!</h1>
-<a href="http://127.0.0.1:8000/article/1/">Блог 1 (article 1)</a>
-<a href="http://127.0.0.1:8000/article/2/">Блог 2 (article 2)</a>
-<a href="http://127.0.0.1:8000/admin/">Админка</a>
-<a href="http://127.0.0.1:8000/main1/">Главная 1</a>
+{% endblock %}
